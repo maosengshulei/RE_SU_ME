@@ -1,0 +1,167 @@
+%!TEX program = xelatex
+% Font Size:
+%   10pt, 11pt, 12pt
+% Paper Size:
+%   a4paper, letterpaper, a5paper, leagalpaper, executivepaper, landscape
+% Font Family:
+%   roman, sans
+\documentclass[12pt, a4paper, roman]{moderncv}
+
+% Style:
+%   casual, classic, oldstyle, banking
+\moderncvstyle{classic}
+% Color:
+%   blue, orange, green, red, purple, grey
+\moderncvcolor{grey}
+% \nopagenumbers{}
+% \definecolor{color0}{rgb}{0, 0, 0}
+% \definecolor{color1}{RGB}{245, 90, 7}
+% \definecolor{color2}{RGB}{39, 40, 34}
+
+% Font specify
+\usepackage[UTF8, scheme = plain, heading = false]{ctex}
+
+% Page layout
+\usepackage{geometry}
+\geometry{scale = 0.8}
+% \setlength{\hintscolumnwidth}{6cm}           % 如果你希望改变日期栏的宽度
+\AtBeginDocument{\settowidth{\hintscolumnwidth}{XXXX 年 -- XXXX 年}}
+
+\AtBeginDocument{\hypersetup{pdfstartview = FitH}}
+
+% Packages
+\usepackage{metalogo}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\providecommand{\CTeX}{\relax}
+\renewcommand{\CTeX}{\ensuremath{\mathbb{C}}\TeX}
+\usepackage{paralist}
+
+
+% Self-info
+\name{束}{磊}
+\title{简历}
+% \address{街道及门牌号}{邮编及城市}
+\email{maosengshulei@qq.com}
+\phone[mobile]{+86~188~4869~7420}
+% \phone[fixed]{+2~(345)~678~901}
+% \phone[fax]{+3~(456)~789~012}
+\homepage{github.com/maosengshulei}
+\extrainfo{学校 :哈尔滨工业大学}
+\extrainfo{学校 :哈尔滨工业大学\\期望职位 :机器学习工程师}
+%\photo[<8>][<6>]{<photo>}
+\photo[64pt][0.4pt]{photo}
+% Motto
+% \quote{}
+
+% 显示索引号;仅用于在简历中使用了引言
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% 分类索引
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+\begin{document}
+\maketitle
+
+\section{教育背景}
+\cventry{2016年9月--2018年7月}{工学硕士}{哈尔滨工业大学}{}{\textit{计算机科学与技术/感知计算实验室}}{研究方向：医学图像处理}
+
+% \section{毕业论文}
+% \cvitem{题目}{\emph{题目}}
+% \cvitem{导师}{导师}
+% \cvitem{说明}{\small 论文简介}
+
+
+\section{计算机技能}
+% \cvdoubleitem{C/C++}{熟悉，曾在老师指导下为同级同学讲课}{Cuda C}{熟悉，曾开发基于 GPU 的高性能大数计算库}
+
+\cvitem{C/C++}{熟悉}
+\cvitem{Python}{熟悉}
+\cvitem{Linux}{了解，掌握基本的操作命令}
+\cvitem{Mysql}{了解}
+\cvitem{Caffe}{熟悉}
+\cvitem{Tensorflow}{有过使用经验}
+\cvitem{Spark}{了解}
+\cvitem{其它}{熟悉基本的数据结构与算法;了解常见的机器学习与深度学习算法：如决策树,SVM,KNN,CNN,RNN等}
+% \cvitem{MS Office}{熟悉}
+
+\section{外语技能}
+% \section{语言技能}
+% \cvitemwithcomment{中文}{母语}{}
+\cvitemwithcomment{英语}{熟练}{CET6 556}
+
+\section{项目经验}
+\cventry{2017 年 6月 --     Present}{组队}{\href{https://code.google.com/p/fandol-font/}{fandol-font}}{}{}{腾讯广告算法大赛：广告点击率预估。
+\begin{compactitem}
+  \item 独立完成对原始数据的分析与预处理；
+  \item 提出采用检测的方法去得出结果。
+  \item 参与完成用FCN方法对图像进行语义分割；
+  \item 正参与完成用faster-rcnn方法对图像roi识别。
+\end{compactitem}
+}
+\cventry{2017 年 --     Present}{组队}{\href{https://code.google.com/p/fandol-font/}{fandol-font}}{}{}{心血管易损斑块识。
+\begin{compactitem}
+  \item 独立完成对原始数据的分析与预处理；
+  \item 提出采用检测的方法去得出结果。
+  \item 参与完成用FCN方法对图像进行语义分割；
+  \item 正参与完成用faster-rcnn方法对图像roi识别。
+\end{compactitem}
+}
+%\subsection{其他}
+%\cventry{XXXX 年 -- XXXX 年}{作者}{《GRE XXXX》}{}{}{这是一本面向 GRE 考生的书，旨在训练考生的词汇量并使考生熟悉 GRE 填空题目的逻辑思维链路。该书由 我与 XX 及XX三人合著，现已出版。%
+%\begin{compactitem}
+%  \item 改编、校对习题；
+%  \item 撰写习题详细解析；
+%  \item 排版、校对文稿。
+%\end{compactitem}
+}
+%\cventry{XXXX 年}{队员}{XXXX支教}{XX 市 XX 县}{}{本次支教是 XXXX 服务团第四次走进XXXX，而XXXX的学生中有超过 70\% 的学生是留守儿童。\begin{compactitem}
+ % \item 与校方沟通，组织策划队员在XX县的日程安排；
+  %\item 编排队员任教课表；
+  %\item 参与在XX城区中心广场的流行病防控宣传活动；
+  %\item 与XXXX一起，负责五年级的英语教学及心理辅导。
+%\end{compactitem}}
+%\cventry{XXXX 年}{策划、组织领导}{XXXX}{XX市}{}{……\begin{compactitem}
+ % \item 节目选择、编排；
+  %\item 场地、器材租赁；
+  %\item 现场灯光、声效控制。
+%\end{compactitem}}
+
+
+% \section{个人兴趣}
+% \cvitem{爱好 1}{\small 说明}
+% \cvitem{爱好 2}{\small 说明}
+% \cvitem{爱好 3}{\small 说明}
+
+% \section{其他 1}
+% \cvlistitem{项目 1}
+% \cvlistitem{项目 2}
+% \cvlistitem{项目 3}
+
+% \renewcommand{\listitemsymbol}{-}             % 改变列表符号
+
+% \section{其他 2}
+% \cvlistdoubleitem{项目 1}{项目 4}
+% \cvlistdoubleitem{项目 2}{项目 5\cite{book1}}
+% \cvlistdoubleitem{项目 3}{}
+
+% % 来自BibTeX文件但不使用multibib包的出版物
+% %\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% BibTeX的数字标签
+% \nocite{*}
+% \bibliographystyle{plain}
+% \bibliography{publications}                    % 'publications' 是BibTeX文件的文件名
+
+% 来自BibTeX文件并使用multibib包的出版物
+%\section{出版物}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}               % 'publications' 是BibTeX文件的文件名
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}               % 'publications' 是BibTeX文件的文件名
+
+\end{document} 
